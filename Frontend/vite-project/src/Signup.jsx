@@ -24,7 +24,7 @@ const Signup = () => {
     }
 
     try {
-      const res = await fetch("http://10.156.230.17:5000/signup", {
+      const res = await fetch(`${import.meta.env.VITE_SERVER_ADDRESS}/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
